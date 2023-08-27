@@ -6,7 +6,7 @@ Contains various wikis or how-tos on various technologies or frameworks.
 ### Python
 
 ### NodeJS
-* NestJS [Open Wiki](./NestJs.md)
+* [NestJS](./NestJS.md)
 
 ### Unity (c#)
 
