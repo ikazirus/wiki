@@ -46,7 +46,7 @@ nest g resource Tasks
 npm install --save @nestjs/swagger swagger-ui-express
 ```
 
-Add this lines in main.ts
+Add this lines in **main.ts**
 
 ```js
   const config = new DocumentBuilder().setTitle("Nest API").setDescription("Test API").setVersion("v1.0").build();
