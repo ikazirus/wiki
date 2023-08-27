@@ -12,7 +12,7 @@ Nest provides a level of abstraction above these common Node.js frameworks (Expr
 
 ### Installation
 
-```npm
+```bash
 npm i -g @nestjs/cli
 nest new project-name
 ```
