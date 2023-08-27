@@ -12,7 +12,44 @@ Nest provides a level of abstraction above these common Node.js frameworks (Expr
 
 ### Installation
 
-```cmd
+Install using Nest CLI
+
+```sh
 npm i -g @nestjs/cli
 nest new project-name
+```
+
+Alternative way
+
+```sh
+git clone https://github.com/nestjs/typescript-starter.git project
+cd project
+npm install
+npm run start
+```
+
+### Installation with Swagger Docs
+
+## Basics
+
+
+```sh
+nest g module user
+nest g controller user
+nest g service user
+
+nest g resource Tasks
+```
+
+### Swagger Docs
+```sh
+npm install --save @nestjs/swagger swagger-ui-express
+```
+
+Add this lines in main.ts
+
+```js
+  const config = new DocumentBuilder().setTitle("Nest API").setDescription("Test API").setVersion("v1.0").build();
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('/', app, document);
 ```
